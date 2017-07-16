@@ -15,17 +15,22 @@ $increased-flow-opacity: 1;
 
 #svgBubbleLeftA circle {
     animation: bubbling $anim-duration infinite;
+    -moz-animation: moz-bubbling $anim-duration infinite;
 }
+
 #svgBubbleRightA circle {
     animation: bubbling $anim-duration infinite;
+    -moz-animation: moz-bubbling $anim-duration infinite;
     animation-delay: $anim-offset;
 }
 #svgBubbleLeftB circle {
     animation: bubbling $anim-duration infinite;
+    -moz-animation: moz-bubbling $anim-duration infinite;
     animation-delay: 2 * $anim-offset;
 }
 #svgBubbleRightB circle {
     animation: bubbling $anim-duration infinite;
+    -moz-animation: moz-bubbling $anim-duration infinite;
     animation-delay: 3 * $anim-offset;
 }
 
@@ -39,6 +44,15 @@ $increased-flow-opacity: 1;
     50% { r: 9px; }
     75% { r: 12px; }
     100% { r: 10px; }
+}
+
+
+@keyframes moz-bubbling {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.01); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.01); }
+    100% { transform: scale(1); }
 }
 
 @keyframes pouring {
@@ -68,3 +82,4 @@ $increased-flow-opacity: 1;
         opacity: $base-flow-opacity;
    }
 }
+
