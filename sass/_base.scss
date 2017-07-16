@@ -1,0 +1,16 @@
+@import "color";
+
+body {
+    background: linear-gradient(to top, $bg-color, $bg-color-lighter);
+    font-family: warehouse, "sans serif";
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Warehouse';
+    src: url('/font/WarehouseGothic1.1.2-Rg.eot');
+    src:
+       url('../font/WarehouseGothic1.1.2-Rg.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/font/WarehouseGothic1.1.2-Rg.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/font/WarehouseGothic1.1.2-Rg.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
