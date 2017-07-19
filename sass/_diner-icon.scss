@@ -8,7 +8,7 @@ $base-flow-width: 40px;
 $increased-flow-width: $base-flow-width + $flow-delta;
 
 $base-flow-x: 617.361px;
-$increased-flow-x: $base-flow-x + $flow-delta/2;
+$increased-flow-x: $base-flow-x - $flow-delta/2;
 
 $base-flow-opacity: 0.9;
 $increased-flow-opacity: 1;
